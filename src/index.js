@@ -1,49 +1,9 @@
-import './style.css'
-import render from './templates/people.hbs'
+import "./style.css";
 
-const list = [
-    {
-        name: 'Иван',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Олег',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Илья',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Анна',
-        lastname: 'Иванов'
-    }, 
-    {
-        name: 'Владимир',
-        lastname: 'Иванов'
-    },
-     {
-        name: 'Иван',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Олег',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Илья',
-        lastname: 'Иванов'
-    },
-    {
-        name: 'Анна',
-        lastname: 'Иванов'
-    }, 
-    {
-        name: 'Владимир',
-        lastname: 'Иванов'
-    }
-]
+import { mapInit } from "./js/ymaps";
 
-const map = document.querySelector('#map')
+mapInit();
 
-map.innerHTML = render({ list })
+const map = document.querySelector("#map");
+
+map.innerHTML = render({ list });
