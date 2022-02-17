@@ -6,6 +6,52 @@
   <title>{{htmlWebpackPlugin.option.title}}</title>
 </head>
 <body>
+  
+
+  <div class="reviews">
+    <div class="reviews__form ">
+      <a href="#" class="form__close">
+        <img src="./src/img/icons/close.png" alt="Закрыть" class="form__close-icon">
+      </a>
+
+      <div class="reviews__content">
+        <div class="reviews__desc">
+          <div class="reviews__desc--name">Сергей</div>
+          <div class="reviews__desc--location">Кафе</div>
+          <div class="reviews__desc--date">12.01.2020</div>
+        </div>
+        <div class="reviews__comment">Очень хорошее место</div>
+        <div class="reviews__desc">
+          <div class="reviews__desc--name">Сергей</div>
+          <div class="reviews__desc--location">Кафе</div>
+          <div class="reviews__desc--date">12.01.2020</div>
+        </div>
+        <div class="reviews__comment">Очень хорошее место</div>
+        <div class="reviews__desc">
+          <div class="reviews__desc--name">Сергей</div>
+          <div class="reviews__desc--location">Кафе</div>
+          <div class="reviews__desc--date">12.01.2020</div>
+        </div>
+        <div class="reviews__comment">Очень хорошее место</div>
+      </div>
+
+      <h2 class="form__title">Отзыв:</h2>
+      <div class="reviews__input">
+        <div class="input">
+          <input type="text" name="name" class="form__input" placeholder="Укажите ваше имя"> 
+        </div>
+        <div class="input">
+          <input type="text" name="place" class="form__input" placeholder="Укажите место"> 
+        </div>
+        <div class="input">
+          <textarea class="form__input form__input--textarea" name="comment" placeholder="Оставить отзыв"></textarea>
+        </div>
+        <button class="form_btn">Добавить</button>
+      </div>
+      <div class="form__triangle"></div>
+    </div>
+  </div>
+
   {{> "./src/templates/map.hbs"}}
 </body>
 </html>

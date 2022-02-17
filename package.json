@@ -1,8 +1,8 @@
 {
-  "name": "webpack-env",
+  "name": "project_map",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Arsenii Berezin",
+  "author": "Alexandr Melnik",
   "scripts": {
     "build": "webpack --progress --colors",
     "watch": "webpack-dev-server --progress --colors --open",
